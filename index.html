@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinity Nodes - Advanced</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Üst Kontrol Paneli -->
+    <div id="toolbar">
+        <h1>Infinity Nodes</h1>
+        <div class="controls">
+            <!-- Temalar -->
+            <div class="theme-switcher">
+                <input type="checkbox" id="themeToggle" class="theme-toggle-checkbox">
+                <label for="themeToggle" class="theme-toggle-label">
+                    <!-- İkonlar CSS ile eklenecek -->
+                </label>
+            </div>
+            <!-- Butonlar -->
+            <button id="addNodeBtn">Add Node</button>
+            <button id="connectModeBtn">Connect</button>
+            <button id="exportBtn">Export</button>
+            <button id="importBtn">Import</button>
+            <input type="file" id="importFile" style="display: none;" accept=".json">
+            <button id="resetBtn">Reset</button>
+        </div>
+    </div>
+
+    <!-- Ana Çalışma Alanı -->
+    <div id="canvas"></div>
+
+    <!-- Mini Harita -->
+    <div id="minimap">
+        <div id="minimap-viewport"></div>
+    </div>
+
+    <!-- Kütüphaneler ve Ana JS Dosyası -->
+    <script src="https://cdn.jsdelivr.net/npm/leader-line-new@1.1.9/leader-line.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
